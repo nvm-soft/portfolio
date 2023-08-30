@@ -17,9 +17,11 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
-import { Logo, Logomark } from '@/components/Logo'
+import { Logomark } from '@/components/Logo'
+
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
+import Image from 'next/image'
 
 const RootLayoutContext = createContext(null)
 
@@ -61,11 +63,6 @@ function Header({
         >
           <Logomark
             className="h-8 sm:hidden"
-            invert={invert}
-            filled={logoHovered}
-          />
-          <Logo
-            className="hidden h-8 sm:block"
             invert={invert}
             filled={logoHovered}
           />

@@ -48,7 +48,7 @@ function ContactForm() {
   return (
     <FadeIn className="lg:order-last">
       <form>
-        <h2 className="font-display text-base font-semibold text-neutral-950">
+        <h2 className="font-display text-base font-semibold text-primary">
           Work inquiries
         </h2>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
@@ -105,8 +105,8 @@ function ContactDetails() {
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ['Careers', 'careers@studioagency.com'],
-            ['Press', 'press@studioagency.com'],
+            ['Careers', 'careers@nvmsoft.com'],
+            ['Press', 'press@nvmsoft.com'],
           ].map(([label, email]) => (
             <div key={email}>
               <dt className="font-semibold text-primary">{label}</dt>
@@ -142,7 +142,7 @@ export default function Contact() {
   return (
     <>
       <PageIntro eyebrow="Contact us" title="Let’s work together">
-        <p className='text-secondary'>We can’t wait to hear from you.</p>
+        <p className="text-secondary">We can’t wait to hear from you.</p>
       </PageIntro>
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">

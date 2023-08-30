@@ -8,27 +8,25 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
-import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
+
+import centz from '@/images/clients/99centz.png'
+import automate from '@/images/clients/automate.png'
+import coinramp from '@/images/clients/coinramp.png'
+import collegeGrid from '@/images/clients/college-grid.png'
+import esc from '@/images/clients/esc.png'
+import thymbol from '@/images/clients/thymbol.png'
+
 import { loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
-  ['Phobia', logoPhobiaLight],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['99centz', centz],
+  ['automate', automate],
+  ['coinramp', coinramp],
+  ['the-collage-grid', collegeGrid],
+  ['esc', esc],
+  ['thymbol', thymbol],
 ]
 
 function Clients() {
@@ -44,12 +42,17 @@ function Clients() {
         <FadeInStagger faster>
           <ul
             role="list"
-            className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
+            className="mt-10 grid grid-cols-2 items-center gap-x-8 gap-y-10 lg:grid-cols-4"
           >
             {clients.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image
+                    className="max-h-14 w-28"
+                    src={logo}
+                    alt={client}
+                    unoptimized
+                  />
                 </FadeIn>
               </li>
             ))}
@@ -66,13 +69,7 @@ function CaseStudies({ caseStudies }) {
       <SectionIntro
         title="Harnessing technology for a brighter future"
         className="mt-24 sm:mt-32 lg:mt-40"
-      >
-        <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
-        </p>
-      </SectionIntro>
+      ></SectionIntro>
       <Container className="mt-16">
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {caseStudies.map((caseStudy) => (
@@ -180,12 +177,12 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-primary [text-wrap:balance] sm:text-7xl">
-            Award-winning development studio based in Denmark.
+            Software development firm based on Bangladesh
           </h1>
           <p className="mt-6 text-xl text-secondary">
-            We are a development studio working at the intersection of design
-            and technology. It’s a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+            We are a Software development firm working at the intersection of
+            design and technology. It’s a really busy intersection though — a
+            lot of our staff have been involved in hit and runs.
           </p>
         </FadeIn>
       </Container>

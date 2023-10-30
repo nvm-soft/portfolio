@@ -46,7 +46,7 @@ function Navigation() {
             <div className="font-display text-sm font-semibold tracking-wider text-primary">
               {section.title}
             </div>
-            <ul role="list" className="mt-4 text-sm text-secondary">
+            <ul role="list" className="mt-4 text-sm ">
               {section.links.map((link, linkIndex) => (
                 <li key={linkIndex} className="mt-4">
                   <Link
@@ -120,12 +120,12 @@ export function Footer() {
             <NewsletterForm />
           </div>
         </div>
-        <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
+        <div className="mb-20 mt-24 flex flex-wrap items-end items-center justify-between gap-x-6 gap-y-4 border-t border-primary/10 pt-12">
           <Link href="/" aria-label="Home">
             <Logo className="h-8" fillOnHover />
           </Link>
-          <p className="text-sm text-neutral-700">
-            © Studio Agency Inc. {new Date().getFullYear()}
+          <p className="text-sm text-primary">
+            © nvmsoft {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>

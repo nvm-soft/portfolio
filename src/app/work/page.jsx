@@ -8,17 +8,17 @@ import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
-import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-dark.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-dark.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-dark.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-dark.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-dark.svg'
-import logoPhobia from '@/images/clients/phobia/logo-dark.svg'
-import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
+import centz from '@/images/clients/99centz.png'
+import automate from '@/images/clients/automate.png'
+import coinramp from '@/images/clients/coinramp.png'
+import collegeGrid from '@/images/clients/college-grid.png'
+import esc from '@/images/clients/esc.png'
+import thymbol from '@/images/clients/thymbol.png'
+import circlenomy from '@/images/clients/circlenomy.png'
+import loadBoard from '@/images/clients/loadboard.jpeg'
 import { formatDate } from '@/lib/formatDate'
 import { loadCaseStudies } from '@/lib/mdx'
+import { Testimonial } from '@/components/Testimonial'
 
 function CaseStudies({ caseStudies }) {
   return (
@@ -92,14 +92,14 @@ function CaseStudies({ caseStudies }) {
 }
 
 const clients = [
-  ['Phobia', logoPhobia],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['99centz', centz],
+  ['automate', automate],
+  ['coinramp', coinramp],
+  ['the-collage-grid', collegeGrid],
+  ['esc', esc],
+  ['thymbol', thymbol],
+  ['circlenomy', circlenomy],
+  ['loadboard260', loadBoard],
 ]
 
 function Clients() {
@@ -120,7 +120,7 @@ function Clients() {
             <li key={client} className="group">
               <FadeIn className="overflow-hidden">
                 <Border className="pt-12 group-[&:nth-child(-n+2)]:-mt-px sm:group-[&:nth-child(3)]:-mt-px lg:group-[&:nth-child(4)]:-mt-px">
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image src={logo} alt={client} className='w-32' unoptimized />
                 </Border>
               </FadeIn>
             </li>
@@ -157,10 +157,9 @@ export default async function Work() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
+        client={{ name: 'LoadBoard260', logo: loadBoard }}
       >
-        We approached <em>Studio</em> because we loved their past work. They
-        delivered something remarkably similar in record time.
+        Nvm Soft was great. I knew what I wanted but they made sure I nailed down the details. They were very professional and communicated with me throughout the entire process. They were great, If i ever need a full stack developer again they will definitely be my guy.
       </Testimonial>
 
       <Clients />

@@ -6,7 +6,6 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
 import { PageIntro } from '@/components/PageIntro'
-import { PageLinks } from '@/components/PageLinks'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StatList, StatListItem } from '@/components/StatList'
 import imageAngelaFisher from '@/images/team/angela-fisher.jpg'
@@ -21,7 +20,10 @@ import imageLeonardKrasner from '@/images/team/leonard-krasner.jpg'
 import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
 import imageMichaelFoster from '@/images/team/michael-foster.jpg'
 import imageWhitneyFrancis from '@/images/team/whitney-francis.jpg'
-import { loadArticles } from '@/lib/mdx'
+import imageAlamin from '@/images/team/alamin.jpg'
+import imageJonaed from '@/images/team/jonaed.jpg'
+import imageTaijul from '@/images/team/taijul.jpg'
+import imageAbir from '@/images/team/abir.jpg'
 
 function Culture() {
   return (
@@ -38,8 +40,7 @@ function Culture() {
       <Container className="mt-16">
         <GridList>
           <GridListItem title="Loyalty" invert>
-            Our team has been with us since the beginning because none of them
-            are allowed to have LinkedIn profiles.
+            Our team has been with us since the beginning.
           </GridListItem>
           <GridListItem title="Trust" invert>
             We don’t care when our team works just as long as they are working
@@ -57,72 +58,27 @@ function Culture() {
 
 const team = [
   {
-    title: 'Leadership',
-    people: [
-      {
-        name: 'Leslie Alexander',
-        role: 'Co-Founder / CEO',
-        image: { src: imageLeslieAlexander },
-      },
-      {
-        name: 'Michael Foster',
-        role: 'Co-Founder / CTO',
-        image: { src: imageMichaelFoster },
-      },
-      {
-        name: 'Dries Vincent',
-        role: 'Partner & Business Relations',
-        image: { src: imageDriesVincent },
-      },
-    ],
-  },
-  {
     title: 'Team',
     people: [
       {
-        name: 'Chelsea Hagon',
-        role: 'Senior Developer',
-        image: { src: imageChelseaHagon },
+        name: 'Md Jonaed Hasan',
+        role: 'Full Stack Developer',
+        image: { src: imageJonaed },
       },
       {
-        name: 'Emma Dorsey',
-        role: 'Senior Designer',
-        image: { src: imageEmmaDorsey },
+        name: 'Md Alamin',
+        role: 'Frontend Developer',
+        image: { src: imageAlamin },
       },
       {
-        name: 'Leonard Krasner',
-        role: 'VP, User Experience',
-        image: { src: imageLeonardKrasner },
+        name: 'Md Taijul Islam',
+        role: 'Frontend Developer',
+        image: { src: imageTaijul },
       },
       {
-        name: 'Blake Reid',
-        role: 'Junior Copywriter',
-        image: { src: imageBlakeReid },
-      },
-      {
-        name: 'Kathryn Murphy',
-        role: 'VP, Human Resources',
-        image: { src: imageKathrynMurphy },
-      },
-      {
-        name: 'Whitney Francis',
-        role: 'Content Specialist',
-        image: { src: imageWhitneyFrancis },
-      },
-      {
-        name: 'Jeffrey Webb',
-        role: 'Account Coordinator',
-        image: { src: imageJeffreyWebb },
-      },
-      {
-        name: 'Benjamin Russel',
-        role: 'Senior Developer',
-        image: { src: imageBenjaminRussel },
-      },
-      {
-        name: 'Angela Fisher',
-        role: 'Front-end Developer',
-        image: { src: imageAngelaFisher },
+        name: 'Al Muntasir Abir',
+        role: 'Backend Developer',
+        image: { src: imageAbir },
       },
     ],
   },
@@ -184,24 +140,22 @@ export const metadata = {
 }
 
 export default async function About() {
-  let blogArticles = (await loadArticles()).slice(0, 2)
-
   return (
     <>
       <PageIntro eyebrow="About us" title="Our strength is collaboration">
-        <p className='text-secondary'>
+        <p className="text-secondary">
           We believe that our strength lies in our collaborative approach, which
           puts our clients at the center of everything we do.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
+            Nvm Soft was started by two friends who noticed that developer
             studios were charging clients double what an in-house team would
             cost. Since the beginning, we have been committed to doing things
             differently by charging triple instead.
           </p>
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
+            At Nvm Soft, we’re more than just colleagues — we’re a family. This
             means we pay very little and expect people to work late. We want our
             employees to bring their whole selves to work. In return, we just
             ask that they keep themselves there until at least 6:30pm.
@@ -210,22 +164,15 @@ export default async function About() {
       </PageIntro>
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
+          <StatListItem value="4" label="Employees" />
+          <StatListItem value="17" label="Placated clients" />
+          <StatListItem value="$50K" label="Invoices billed" />
         </StatList>
       </Container>
 
       <Culture />
 
       <Team />
-
-      <PageLinks
-        className="mt-24 sm:mt-32 lg:mt-40"
-        title="From the blog"
-        intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
-        pages={blogArticles}
-      />
 
       <ContactSection />
     </>

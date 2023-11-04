@@ -27,7 +27,6 @@ const navigation = [
     links: [
       { title: 'About', href: '/about' },
       { title: 'Process', href: '/process' },
-      { title: 'Blog', href: '/blog' },
       { title: 'Contact us', href: '/contact' },
     ],
   },
@@ -78,49 +77,14 @@ function ArrowIcon(props) {
   )
 }
 
-function NewsletterForm() {
-  return (
-    <form className="max-w-sm">
-      <h2 className="font-display text-sm font-semibold tracking-wider text-primary">
-        Sign up for our newsletter
-      </h2>
-      <p className="mt-4 text-sm text-off-black">
-        Subscribe to get the latest design news, articles, resources and
-        inspiration.
-      </p>
-      <div className="relative mt-6">
-        <input
-          type="email"
-          placeholder="Email address"
-          autoComplete="email"
-          aria-label="Email address"
-          className="block w-full rounded-2xl border border-off-black bg-transparent py-4 pl-6 pr-20 text-base/6 text-off-black ring-2 ring-transparent transition placeholder:text-secondary focus:border-primary focus:outline-none focus:ring-primary"
-        />
-        <div className="absolute inset-y-1 right-1 flex justify-end">
-          <button
-            type="submit"
-            aria-label="Submit"
-            className="flex aspect-square h-full items-center justify-center rounded-xl bg-primary text-white transition hover:bg-secondary"
-          >
-            <ArrowIcon className="w-4" />
-          </button>
-        </div>
-      </div>
-    </form>
-  )
-}
-
 export function Footer() {
   return (
     <Container as="footer" className="mt-24 w-full sm:mt-32 lg:mt-40">
       <FadeIn>
-        <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-16">
           <Navigation />
-          <div className="flex lg:justify-end">
-            <NewsletterForm />
-          </div>
         </div>
-        <div className="mb-20 mt-24 flex flex-wrap items-end items-center justify-between gap-x-6 gap-y-4 border-t border-primary/10 pt-12">
+        <div className="mb-20 mt-24 flex flex-wrap items-center justify-between gap-x-6 gap-y-4 border-t border-primary/10 pt-12">
           <Link href="/" aria-label="Home">
             <Logo className="h-8" fillOnHover />
           </Link>

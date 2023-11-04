@@ -8,7 +8,6 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import imageLaptop from '@/images/laptop.jpg'
 
 import centz from '@/images/clients/99centz.png'
@@ -17,6 +16,8 @@ import coinramp from '@/images/clients/coinramp.png'
 import collegeGrid from '@/images/clients/college-grid.png'
 import esc from '@/images/clients/esc.png'
 import thymbol from '@/images/clients/thymbol.png'
+import circlenomy from '@/images/clients/circlenomy.png'
+import loadboard from '@/images/clients/loadboard.jpeg'
 
 import { loadCaseStudies } from '@/lib/mdx'
 
@@ -27,6 +28,8 @@ const clients = [
   ['the-collage-grid', collegeGrid],
   ['esc', esc],
   ['thymbol', thymbol],
+  ['circlenomy', circlenomy],
+  ['loadboard260', loadboard]
 ]
 
 function Clients() {
@@ -35,7 +38,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with Dozens of amazing people
+            We&apos;ve worked with Dozens of amazing people
           </h2>
           <div className="h-px flex-auto bg-secondary" />
         </FadeIn>
@@ -48,7 +51,7 @@ function Clients() {
               <li key={client}>
                 <FadeIn>
                   <Image
-                    className="max-h-14 w-28"
+                    className="w-28"
                     src={logo}
                     alt={client}
                     unoptimized
@@ -81,7 +84,7 @@ function CaseStudies({ caseStudies }) {
                     <Image
                       src={caseStudy.logo}
                       alt={caseStudy.client}
-                      className="h-16 w-16"
+                      className="w-16"
                       unoptimized
                     />
                   </Link>
@@ -145,17 +148,15 @@ function Services() {
             </ListItem>
             <ListItem title="Application development">
               We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+              app frameworks, like NextJS and Tailwindcss.
             </ListItem>
             <ListItem title="E-commerce">
               We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
+              mainly means building a cutting edge technology stack that will help to grow your business.
             </ListItem>
             <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+              At Nvm Soft we understand the importance of having a robust and
+              customised Software. That&apos;s why we use NodeJS and ReactJS to build scalable web applications.
             </ListItem>
           </List>
         </div>
@@ -166,7 +167,7 @@ function Services() {
 
 export const metadata = {
   description:
-    'We are a development studio working at the intersection of design and technology.',
+    'We are a software development firm working at the intersection of design and technology.',
 }
 
 export default async function Home() {
@@ -193,11 +194,9 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        client={{ name: 'The Open Collage', logo: collegeGrid }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
+        NVM Soft exceeded expectations with their work on a complex project involving mapping systems and unfamiliar tools like Leaflet. They quickly taught themselves and improvised well in areas where the designs were unclear and performance issues arose. They even solved a challenge where we had to render tens of thousands of images onscreen without crashing the browser. NVM Soft&apos;s communication was outstanding, sending numerous video updates to keep us informed. They did all of this while working through school, making their achievements even more impressive. Highly recommended with a 10/10 rating.
       </Testimonial>
 
       <Services />

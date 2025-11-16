@@ -178,7 +178,7 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-primary [text-wrap:balance] sm:text-7xl">
-            Software development firm based on Bangladesh
+            Software development firm based in Finland
           </h1>
           <p className="mt-6 text-xl text-secondary">
             We are a Software development firm working at the intersection of

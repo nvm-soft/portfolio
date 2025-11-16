@@ -20,9 +20,9 @@ export function Offices({ invert = false, ...props }) {
     <ul role="list" {...props}>
       <li>
         <Office name="Dhaka" invert={invert}>
-          Dumni, Khilkhet, Dhaka 1229
+          Lauranpolku 8 A 20, Vantaa
           <br />
-          Bangladesh
+          Finland
         </Office>
       </li>
     </ul>

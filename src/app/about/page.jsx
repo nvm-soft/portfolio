@@ -20,10 +20,10 @@ import imageLeonardKrasner from '@/images/team/leonard-krasner.jpg'
 import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
 import imageMichaelFoster from '@/images/team/michael-foster.jpg'
 import imageWhitneyFrancis from '@/images/team/whitney-francis.jpg'
-import imageAlamin from '@/images/team/alamin.jpg'
-import imageJonaed from '@/images/team/jonaed.jpg'
-import imageTaijul from '@/images/team/taijul.jpg'
-import imageAbir from '@/images/team/abir.jpg'
+//import imageAlamin from '@/images/team/alamin.jpg'
+//import imageJonaed from '@/images/team/jonaed.jpg'
+//import imageTaijul from '@/images/team/taijul.jpg'
+//import imageAbir from '@/images/team/abir.jpg'
 
 function Culture() {
   return (

@@ -56,7 +56,7 @@ function Culture() {
   )
 }
 
-const team = [
+// const team = [
 //   {
 //     title: 'Team',
 //     people: [

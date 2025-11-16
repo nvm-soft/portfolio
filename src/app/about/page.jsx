@@ -56,34 +56,33 @@ function Culture() {
   )
 }
 
-const team = [
-  {
-    title: 'Team',
-    people: [
-      {
-        name: 'Md Jonaed Hasan',
-        role: 'Full Stack Developer',
-        image: { src: imageJonaed },
-      },
-      {
-        name: 'Md Alamin',
-        role: 'Frontend Developer',
-        image: { src: imageAlamin },
-      },
-      {
-        name: 'Md Taijul Islam',
-        role: 'Frontend Developer',
-        image: { src: imageTaijul },
-      },
-      {
-        name: 'Al Muntasir Abir',
-        role: 'Backend Developer',
-        image: { src: imageAbir },
-      },
-    ],
-  },
-]
-
+// const team = [
+//   {
+//     title: 'Team',
+//     people: [
+//       {
+//         name: 'Md Jonaed Hasan',
+//         role: 'Full Stack Developer',
+//         image: { src: imageJonaed },
+//       },
+//       {
+//         name: 'Md Alamin',
+//         role: 'Frontend Developer',
+//         image: { src: imageAlamin },
+//       },
+//       {
+//         name: 'Md Taijul Islam',
+//         role: 'Frontend Developer',
+//         image: { src: imageTaijul },
+//       },
+//       {
+//         name: 'Al Muntasir Abir',
+//         role: 'Backend Developer',
+//         image: { src: imageAbir },
+//       },
+//     ],
+//   },
+// ]
 function Team() {
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">

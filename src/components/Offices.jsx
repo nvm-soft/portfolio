@@ -19,7 +19,7 @@ export function Offices({ invert = false, ...props }) {
   return (
     <ul role="list" {...props}>
       <li>
-        <Office name="Dhaka" invert={invert}>
+        <Office name="Finland" invert={invert}>
           Lauranpolku 8 A 20, Vantaa
           <br />
           Finland

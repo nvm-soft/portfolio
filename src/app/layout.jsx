@@ -5,7 +5,7 @@ import '@/styles/tailwind.css'
 export const metadata = {
   title: {
     template: '%s - Nvm Soft',
-    default: 'Nvm Soft - Software development firm based on Bangladesh',
+    default: 'Nvm Soft - Software development firm based in Finland',
   },
 }
 

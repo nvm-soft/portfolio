@@ -105,8 +105,8 @@ function ContactDetails() {
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ['Careers', 'careers@nvmsoft.com'],
-            ['Press', 'press@nvmsoft.com'],
+            ['Careers', 'careers@nvmsoft.fi'],
+            ['Press', 'press@nvmsoft.fi'],
           ].map(([label, email]) => (
             <div key={email}>
               <dt className="font-semibold text-primary">{label}</dt>
